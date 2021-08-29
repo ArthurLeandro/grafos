@@ -1,17 +1,18 @@
 #include <iostream>
-#include "Data.cpp"
 using namespace std;
+
+template <class Data>
 class Vertex
 {
 public:
-	int GetData()
-	{
-		return (int)m_data.getValue(NULL);
-	}
-
-	Data GetDataStruct()
+	Data GetData()
 	{
 		return m_data;
+	}
+
+	void SetData(Data p_data)
+	{
+		m_data = p_data;
 	}
 
 private:

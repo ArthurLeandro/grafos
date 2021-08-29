@@ -1,14 +1,14 @@
 #include <iostream>
 #include <cstdlib>
 #include <list>
-#include "Edge.cpp"
-#include "Vertex.cpp"
+#include "../Data/Vertex.cpp"
+#include "../Data/Edge.cpp"
 
 template <class T>
-class Graph
+class NonDirectionalAndNonWeightedGraph
 {
 public:
-	Graph()
+	NonDirectionalAndNonWeightedGraph()
 	{
 	}
 
