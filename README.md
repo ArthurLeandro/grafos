@@ -1,21 +1,3 @@
-# grafos
+# Grafos
 
-#interface
-class <NAME>{
-    virtual void <functionNAME>()=0;
-};
-
-#constructor
-class FIlHA:PAI{
-
-public :
-  FILHA(Lista lista):PAI(lista){}
-
-}
-
-template <class T> class Stack{
-   
-    public:
-        T data;
-    
-};
+Esse repositório tem o intuito de representar códigos relacionados a grafos da maneira mais didática possível, não necessariamente da forma mais otimizada possível.

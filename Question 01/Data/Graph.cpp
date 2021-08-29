@@ -1,9 +1,11 @@
 #include <iostream>
 #include <cstdlib>
 #include <list>
-#include "Edge.cpp"
 #include "Vertex.cpp"
 
+/**
+ * Esta classe representa um grafo sem nenhuma aresta
+*/
 template <class T>
 class Graph
 {
@@ -13,6 +15,5 @@ public:
 	}
 
 private:
-	list<Edge<T>> edges;
-	list<Vertex<T>> vertices;
+	list<Vertex<T>> vertices; // todos os vertíces do grafo
 };

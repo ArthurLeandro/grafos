@@ -1,11 +1,15 @@
 #include <iostream>
 #include <cstdlib>
 #include <list>
-#include "../Data/Vertex.cpp"
+#include "../Data/Graph.cpp"
 #include "../Data/DirectionalEdge.cpp"
 
+/**
+	 * Esta classe representa um grafo direcionado não ponderado
+ 	* Esta classe herda da classe {Graph}
+	*/
 template <class T>
-class DirectionalNonWeightedGraph
+class DirectionalNonWeightedGraph : public Graph
 {
 public:
 	DirectionalNonWeightedGraph()
@@ -13,6 +17,5 @@ public:
 	}
 
 private:
-	list<DirectionalEdge<T>> edges;
-	list<Vertex<T>> vertices;
+	list<DirectionalEdge<T>> edges; // todos as arestas  direcionadas
 };

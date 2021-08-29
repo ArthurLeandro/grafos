@@ -4,6 +4,10 @@
 #include "../Data/Vertex.cpp"
 #include "../Data/DirectionalAndWeightedEdge.cpp"
 
+/**
+ * Esta classe representa um grafo direcional e ponderado 
+ * Esta classe herda da classe {Graph}
+*/
 template <class T>
 class DirectionalAndWeightedGraph
 {
@@ -13,6 +17,5 @@ public:
 	}
 
 private:
-	list<DirectionalAndWeightedEdge<T>> edges;
-	list<Vertex<T>> vertices;
+	list<DirectionalAndWeightedEdge<T>> edges; //todas as arestas direcionadas e ponderadas
 };
